@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/9ddf44991d.js" crossorigin="anonymous"></script>
     <style>
        .decoration h2{
             text-decoration: line-through;
@@ -14,8 +15,9 @@
             text-decoration-style: dashed;
         }
        .decoration h4{
-            text-decoration: underline;
+            text-decoration: underline red;
             text-decoration-thickness: 2px;
+            
         
         }
        .decoration h5{
@@ -42,6 +44,12 @@
         .weight p{
             font-variant: small-caps;
         }
+        .icons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-bottom: 100px;
+        }
+
     </style>
 </head>
 <body>
@@ -64,6 +72,25 @@
     <h3>Testing font weight</h3>
     <p>Testing Font variant</p>
     
+</div>
+
+<div class="icons">
+    <div class="user">
+        <h3>User Icon</h3>
+        <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="lock">
+        <h3>Lock Icon</h3>
+        <i class="fa-solid fa-lock"></i>
+    </div>
+    <div class="home">
+        <h3>Home Icon</h3>
+        <i class="fa-solid fa-house"></i>
+    </div>
+    <div class="facebook">
+        <h3>Facebook Icon</h3>
+        <i class="fa-brands fa-facebook"></i>
+    </div>
 </div>
 </body>
 </html>
