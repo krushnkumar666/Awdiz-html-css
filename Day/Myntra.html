@@ -70,6 +70,9 @@
         width: 15%;
         margin-top: 10px;
       }
+      #profile .bars {
+        display: none;
+      }
       #profile p {
         margin-left: 5px;
         font-size: small;
@@ -97,6 +100,35 @@
       sup {
         font-size: 10px;
         color: red;
+      }
+      @media screen and (max-width: 650px) {
+        #navs {
+          display: none;
+        }
+        #logo {
+          width: 100px;
+        }
+        #search {
+          width: 400px;
+          height: 100px;
+          
+        }
+        #profile .user {
+          display: none;
+        }
+        #profile .wishlist {
+          display: none;
+        }
+        #profile .bag {
+          display: none;
+        }
+        #profile .bars {
+          display: block;
+          margin-top: 5px;
+        }
+        #profile .bars i{
+          font-size: 2rem;
+        }
       }
     </style>
   </head>
@@ -163,6 +195,9 @@
           <div class="bag">
             <i class="fa-solid fa-bag-shopping"></i>
             <p>Bag</p>
+          </div>
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
